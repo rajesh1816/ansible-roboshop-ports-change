@@ -28,7 +28,7 @@
 
   - name: download code to tmp directory
     ansible.builtin.get_url:
-      url: https://roboshop-artifacts.s3.amazonaws.com/payment-v3.zip
+      url: https://roboshop-backend-src.s3.us-east-1.amazonaws.com/payment-v3.zip
       dest: /tmp/payment.zip 
   
   - name: unzipping the file into app directory

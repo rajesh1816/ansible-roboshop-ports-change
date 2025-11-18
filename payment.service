@@ -6,9 +6,9 @@ User=root
 WorkingDirectory=/app
 // highlight-start
 Environment=CART_HOST=cart.rajeshit.space
-Environment=CART_PORT=8080
+Environment=CART_PORT=8084
 Environment=USER_HOST=user.rajeshit.space
-Environment=USER_PORT=8080
+Environment=USER_PORT=8082
 Environment=AMQP_HOST=rabbitmq.rajeshit.space
 // highlight-end
 Environment=AMQP_USER=roboshop

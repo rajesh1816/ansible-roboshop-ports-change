@@ -44,7 +44,7 @@
 
   - name: installing dependencies
     community.general.npm:
-      path: /app/catalogue-v3
+      path: /app
       state: present
 
   - name: copying catalogue service file systemctl

@@ -47,9 +47,9 @@
       path: /app
       state: present
 
-  - name: copying user service file for systemctl
+  - name: copying cart service file for systemctl
     ansible.builtin.copy:
-      src: user.service
+      src: cart.service
       dest: /etc/systemd/system/cart.service
 
   - name: deamon - reload

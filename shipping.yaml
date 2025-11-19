@@ -6,13 +6,19 @@
   tasks:
   - name: install maven
     ansible.builtin.dnf:
-      name: maven
+      name: "{{ item }}"
       state: present
+    loop:
+    - maven
+    - mysql
 
   - name: install pymysql
     ansible.builtin.pip:
-      name: PyMySQL
+      name: "{{ item }}"
       state: present
+    loop:
+    - cryptography
+    - PyMySQL
 
   - name: create /app directory
     ansible.builtin.file:
@@ -62,12 +68,7 @@
       name: shipping
       state: started
       enabled: yes
-  
-  - name: install mysql
-    ansible.builtin.dnf:
-      name: mysql
-      state: present
-
+      
   - name: import mysql data 
     tags:
     - import

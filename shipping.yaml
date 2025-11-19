@@ -68,7 +68,7 @@
       name: shipping
       state: started
       enabled: yes
-      
+
   - name: import mysql data 
     tags:
     - import
@@ -86,6 +86,6 @@
 
     - name: restart shiiping
       ansible.builtin.service:
-        name: shiiping  
+        name: shipping  
         state: restarted 
   
